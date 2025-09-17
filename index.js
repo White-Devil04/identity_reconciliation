@@ -173,7 +173,6 @@ app.post("/identify", async (req, res) => {
       return res.json({
         contact: {
           // return the data field and corrected field name
-          primaryContatctId: newId,
           primaryContactId: newId,
           emails: email ? [email] : [],
           phoneNumbers: phoneNumber ? [phoneNumber] : [],
